@@ -164,6 +164,7 @@
         const num6 = document.getElementById("num6");
         const dot = document.getElementsByClassName("dot");
         const backimg = document.getElementsByTagName("body");
+        const cat = document.getElementById("cat");
 
 
         const setDate = () => {
@@ -234,7 +235,9 @@
         }
         changeback();
 
-
+        cat.onclick = () => {
+            backimg[0].style.backgroundImage = `url(${arr[rand(0, 3)]})`;
+        }
 
     </script>
 </body>
